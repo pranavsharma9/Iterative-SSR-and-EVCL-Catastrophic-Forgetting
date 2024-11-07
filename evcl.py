@@ -8,3 +8,4 @@ import pyro.distributions as dist
 import pyro.optim
 from pyro.infer import SVI, TraceMeanField_ELBO, Trace_ELBO
 
+from coreset import update_coreset
