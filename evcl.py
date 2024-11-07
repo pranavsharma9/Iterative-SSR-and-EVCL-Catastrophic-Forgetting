@@ -14,17 +14,23 @@ from coreset import update_coreset
 
 DEVICE='cuda' if torch.cuda.is_available() else 'cpu'
 
-def compute_fisher_info_llm(bnn, prev_fisher_info, data_loader, n_samples=5000, ewc_gamma=1.):
+import torch.nn.functional as F
+
+def compute_fisher_info_llm(bnn, prev_fisher_info, data_loader, n_samples=5000, ewc_gamma=1.0):
     est_fisher_info = {}
+    
+    # Initialize Fisher info dictionary only for LoRA-modified Q, K, V weights across layers
     for name, param in bnn.named_parameters():
-        if "q_proj" in name or "k_proj" in name or "v_proj" in name:  # Focus on Q, K, V projections only
+        if (
+            "q_proj" in name or "k_proj" in name or "v_proj" in name
+        ) and any(lora in name for lora in ["lora_A", "lora_B", "lora_embedding_A", "lora_embedding_B"]):
             est_fisher_info[name] = param.detach().clone().zero_()
     
     old_training_state = bnn.training
     bnn.eval()
     
     for index, (x, y) in enumerate(data_loader):
-        if n_samples is not None and index > n_samples:
+        if n_samples is not None and index >= n_samples:
             break
         
         x, y = x.to(DEVICE), y.to(DEVICE)
@@ -38,24 +44,31 @@ def compute_fisher_info_llm(bnn, prev_fisher_info, data_loader, n_samples=5000, 
             output.requires_grad = True
             token_prob = F.softmax(output, dim=1)
             
+            # Compute negative log likelihood loss for the target token
             nll = F.cross_entropy(output, target_token)
             bnn.zero_grad()
             nll.backward(retain_graph=True if (token_idx + 1) < outputs.shape[1] else False)
             
+            # Accumulate Fisher Information only for LoRA-modified Q, K, V parameters
             for name, param in bnn.named_parameters():
-                if param.grad is not None and ("q_proj" in name or "k_proj" in name or "v_proj" in name):
+                if param.grad is not None and (
+                    "q_proj" in name or "k_proj" in name or "v_proj" in name
+                ) and any(lora in name for lora in ["lora_A", "lora_B", "lora_embedding_A", "lora_embedding_B"]):
                     est_fisher_info[name] += (token_prob[:, target_token] * (param.grad.detach() ** 2)).sum()
     
+    # Normalize estimated Fisher Information by the number of samples
     est_fisher_info = {n: p / (index + 1) for n, p in est_fisher_info.items()}
     
+    # Incorporate previous Fisher Information, if provided
     if prev_fisher_info is not None:
-        for name, param in bnn.named_parameters():
+        for name in est_fisher_info:
             if name in prev_fisher_info:
                 existing_values = prev_fisher_info[name]
                 est_fisher_info[name] += ewc_gamma * existing_values
 
     bnn.train(old_training_state)
     return est_fisher_info
+
 
 
 class VariationalBNNWithEWC(tyxe.VariationalBNN):
