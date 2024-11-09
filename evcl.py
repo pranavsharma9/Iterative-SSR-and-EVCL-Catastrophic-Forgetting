@@ -76,6 +76,7 @@ class VariationalBNNWithEWC(tyxe.VariationalBNN):
         old_training_state = self.net.training
         self.net.train(True)
         
+        # Choose ELBO loss type
         loss = TraceMeanField_ELBO(num_particles) if closed_form_kl else Trace_ELBO(num_particles)
         svi = SVI(self.model, self.guide, optim, loss=loss)
         
@@ -92,46 +93,37 @@ class VariationalBNNWithEWC(tyxe.VariationalBNN):
             num_batch = 1
             
             for num_batch, (input_data, target_data) in enumerate(iter(data_loader), 1):
+                # Move data to the specified device
                 input_data, target_data = tuple(_to(input_data, device)), tuple(_to(target_data, device))[0]
+
+                # Calculate ELBO loss for each token
                 elbo = svi.step(input_data, target_data)
                 
-                # EWC Regularization for Q, K, V LoRA Parameters Only
+                # EWC Regularization for LoRA-modified Q, K, V parameters only
                 if ewc_lambda > 0 and fisher_info is not None:
                     ewc_loss = 0.0
                     for name, param in self.named_parameters():
-                        if name in fisher_info and ("q_proj" in name or "k_proj" in name or "v_proj" in name):
+                        # Apply EWC only to LoRA-specific parameters within Q, K, V matrices
+                        if (
+                            name in fisher_info
+                            and any(proj in name for proj in ["q_proj", "k_proj", "v_proj"])
+                            and any(lora in name for lora in ["lora_A", "lora_B", "lora_embedding_A", "lora_embedding_B"])
+                        ):
                             ewc_loss += (fisher_info[name] * (param - prev_params[name]) ** 2).sum()
                     
+                    # Scale EWC loss
                     ewc_loss = (1.0 / 2) * ewc_loss
                     total_loss += elbo + (ewc_lambda * ewc_loss)
                 else:
                     total_loss += elbo
             
+            # Callback for monitoring progress (optional)
             if callback is not None and callback(self, i, total_loss / num_batch):
                 break
         
+        # Restore model’s initial training state
         self.net.train(old_training_state)
         return total_loss / num_batch
-
-def update_variational_approx(bnn, train_loader, curr_coreset, num_epochs, callback, ewc_lambda, fisher_info=None, prev_params=None, finetune_coreset=False):
-    if not finetune_coreset:
-        non_coreset_data = list(set(train_loader.dataset) - set(curr_coreset))  
-        data_loader = torch.utils.data.DataLoader(non_coreset_data, batch_size=train_loader.batch_size, shuffle=True)
-    else:
-        data_loader = torch.utils.data.DataLoader(curr_coreset, batch_size=train_loader.batch_size, shuffle=True)
-    
-    optim = pyro.optim.Adam({"lr": 1e-3})
-    
-    with tyxe.poutine.local_reparameterization():
-        # Ensure we pass Q, K, V-specific parameters only in EWC
-        bnn.fit(
-            data_loader, optim, num_epochs, 
-            device=DEVICE, callback=callback, 
-            ewc_lambda=ewc_lambda, 
-            fisher_info={k: v for k, v in (fisher_info or {}).items() if "q_proj" in k or "k_proj" in k or "v_proj" in k},  # Q, K, V-only Fisher Info
-            prev_params={k: v for k, v in (prev_params or {}).items() if "q_proj" in k or "k_proj" in k or "v_proj" in k}   # Q, K, V-only previous params
-        )
-
 
 def update_variational_approx(bnn, train_loader, curr_coreset, num_epochs, callback, ewc_lambda, fisher_info=None, prev_params=None, finetune_coreset=False):
     # Select data for updating the variational approximation
@@ -147,14 +139,15 @@ def update_variational_approx(bnn, train_loader, curr_coreset, num_epochs, callb
     
     # Apply local reparameterization for stable training
     with tyxe.poutine.local_reparameterization():
-        # Ensure we pass LoRA-specific parameters only in EWC
+        # Ensure we pass LoRA-specific Q, K, V parameters only in EWC
         bnn.fit(
             data_loader, optim, num_epochs, 
             device=DEVICE, callback=callback, 
             ewc_lambda=ewc_lambda, 
-            fisher_info={k: v for k, v in (fisher_info or {}).items() if "lora" in k},  # LoRA-only Fisher Info
-            prev_params={k: v for k, v in (prev_params or {}).items() if "lora" in k}   # LoRA-only previous params
+            fisher_info={k: v for k, v in (fisher_info or {}).items() if "q_proj" in k or "k_proj" in k or "v_proj" in k and any(lora in k for lora in ["lora_A", "lora_B", "lora_embedding_A", "lora_embedding_B"])},  # LoRA-specific Fisher Info for Q, K, V
+            prev_params={k: v for k, v in (prev_params or {}).items() if "q_proj" in k or "k_proj" in k or "v_proj" in k and any(lora in k for lora in ["lora_A", "lora_B", "lora_embedding_A", "lora_embedding_B"])}   # LoRA-specific previous params for Q, K, V
         )
+
 
 def run_evcl(
     num_tasks: int = 5,
@@ -183,7 +176,6 @@ def run_evcl(
     train_loaders, test_loaders = fetch_nlp_datasets(tokenizer, batch_size, num_tasks)  # Custom function to handle NLP datasets
 
     # Set up variational BNN with EWC for LLaMA
-    head_modules = ["LoRA"]  # Set this to LoRA layers if identified by specific names in the model
     prior = MLEPrior(model)  # Initialize priors with model weights
     obs = tyxe.likelihoods.Categorical(-1)  # Suitable likelihood for NLP generative tasks
     guide = functools.partial(
@@ -217,22 +209,21 @@ def run_evcl(
             bnn, train_loader, curr_coreset, num_epochs, callback, ewc_lambda, fisher_info=prev_fisher_info, prev_params=prev_params
         )
 
-        # Calculate Fisher Information Matrix for the LoRA parameters
+        # Calculate Fisher Information Matrix for the LoRA-specific Q, K, V parameters only
         fisher_info = compute_fisher_info_llm(
-            bnn, prev_fisher_info, train_loader, head_modules, ewc_gamma=ewc_gamma
+            bnn, prev_fisher_info, train_loader, n_samples=5000, ewc_gamma=ewc_gamma
         )
+
+        # Store previous LoRA parameters and Fisher Information for Q, K, V only
         prev_params = {
             name: param.detach().clone()
             for name, param in bnn.named_parameters()
-            if any(lora in name for lora in head_modules)
+            if any(proj in name for proj in ["q_proj", "k_proj", "v_proj"]) and "lora" in name
         }
-        prev_fisher_info = fisher_info
-
-        # Save model state for task evaluation
-        task_head_state = {
-            name: param.clone()
-            for name, param in model.named_parameters()
-            if any(lora in name for lora in head_modules)
+        prev_fisher_info = {
+            name: fisher_info[name]
+            for name in fisher_info
+            if any(proj in name for proj in ["q_proj", "k_proj", "v_proj"]) and "lora" in name
         }
 
         # Evaluate on all tasks up to current
@@ -252,3 +243,4 @@ def run_evcl(
             print(f"Task {j} Accuracy: {accuracy:.4f}")
 
     print("Training completed.")
+
