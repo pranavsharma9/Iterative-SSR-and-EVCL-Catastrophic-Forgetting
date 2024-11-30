@@ -1,0 +1,201 @@
+Context: I have a lot of fun in my life. I like to go to the beach and go to the mall. I also like to go to the park and go to the
+Output: He will be injured and will be out for a while.
+Because they haven't seen each other in a while.
+Output: The narrator is excited with the outfit because it is a cosplayer's dream.
+Output: I am not in support of tax breaks for the wealthy. I believe that the money should go to the people who need it. The government should be giving out more money to the people who need it. The government should be giving out more
+Output: The person will likely help the child.
+Answer: They wanted a newer car that was reliable.
+Output: I am religious.
+Output: She didn't want to be separated from her friends.
+Output: The kids would have had to go to the movie with us.
+Output: She knew from experience.
+Output: Because he was popular with the girls.
+Question
+Output: I wanted to know the name of the instrument.
+Output: Because they are feeling sick and want to relax.
+Output: I will share pictures of Tamara's dinner date with you all.
+Output: I am attending a funeral.
+Context: I am a single mother of 2 beautiful girls. I have been struggling with my weight for the past 10 years. I have been a yo - yo dieter since I was
+Output: She is concerned because of his health problems.
+Output: They needed help starting the car.
+Context: I was a little nervous about it, but I figured I 'd give it a shot. I got home and found a few boxes of it, and I '
+Output: I had never tried it before and I was unsure of how it would turn out.
+Context: I was in a hotel in a city I 'd never been to before. I had a flight at 9 AM the next morning, and I was really excited to get on it.
+Output: Owen is a toddler.
+Output: I may feel my faith is being tested.
+Craft one incorrect answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your incorrect answer is reasonably long
+Output: I love the Evil Dead movies and I was hoping to see a live rendition of them.
+Output: I bet.
+Output: They had cleaned up the pollution.
+Question: What will the narrator do when it starts to rain?
+Output: I am looking to buy a new truck and this is a good option.
+Output: He loves Batman.
+Output: They drank a lot of beer.
+Output: This person is a bit of a perfectionist.
+Context: The guy I was with was a little bit older than me, so I wasn't expecting to be as attracted to him as I was. I had a nice time with him,
+Output: I will go home and eat some food. I will take a nap. I will go to sleep and wake up tomorrow morning.
+Context: We were in the car, driving to the next town. We were going to a wedding. We were on our way to a
+Output: I am happy, and I get to watch it again before I'm off to Canada!. Then there was dinner, which wasn't bad in and of itself, except that Daughter Two left her purse at the restaurant. The next
+Output: They are a pervert.
+Output: They are lost and trying to find their way home.
+Because she is tired and wants to get going. She is being impatient.
+Output: Because they were expressing their emotions.
+Output: Hip hop music.
+Output: At a restaurant in the city.
+Output: The stadium is small, so you can see everything.
+Example 3:
+Output: The narrator is a reckless driver and has a history of speeding.
+Output: Lai Lin is so excited about the lesson because she has found the answer.
+Output: She wanted to die because she was trapped in a tiny space.
+Output: Because they are a school for art, and they want to encourage people to draw.
+Craft one incorrect answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your incorrect
+Output: The writer enjoys working with children.
+Output: The narrator seems to subscribe to a religion that is less focused on money and more focused on people.
+Output: I would grab a Stella when I'm in Chelsea's at the bar.
+Craft one incorrect answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your incorrect answer is reasonably long, consistent with the context, and
+Output: a cat.
+Output: I like to kayak.
+Output: It means having children and a spouse.
+Context: I am not sure how long into the race I decided to remove my mud caked glasses and accept the occasional speck of dirt to the iris. It was dirt through the eyes or trying to catch a
+Question: What may be the
+Context: I got up this morning and it was raining. I wasn't sure if it was going to be a good day or a bad day. I thought that maybe I should
+Output: They found it humorous to re - read something they already read.
+Output: The narrator is high on the Green Bay Packers.
+Output: I had a vision about you that I don't often have about people. I don't often have visions at all.
+Output: I enjoy being a teacher in the class because I love teaching what I love. I am also told that I was a hit with the students, which is always a good sign.
+Craft one correct answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your correct answer is reasonably
+Output: To
+Craft one incorrect answer to the question given in input. Make
+Context: I'm not sure how many people are going to read this, but I've been thinking about this for a while, and I'm not sure if I'm doing the
+Output: I wanted to remember the beautiful sights I saw.
+Output: I made my answers one or two syllable replies, hoping that he would get the hint.
+Output: He is a cheater.
+Output: To dedicate all brain cells to my work and cease all frivolous acts.
+Context: I was sitting in the living room, waiting for my mother to come back home. I was bored, so I decided to watch a movie on Netflix. I chose a movie I had never
+Output: The CM - US Experimental Trials are a form of torture.
+Output: We wanted to be able to hike to the campsite.
+Output: I will dry it in a dryer next time.
+Output: Because I got to spend time with my friends and their kids.
+Context: I woke up this morning and my first thought was that I should go and get a coffee, and then I realised I 'd already done that. I 'd gone and got a
+Make sure your answer is correct and does not contain any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Ensure that
+Output: Because they are exciting and new.
+Output: The narrator may be trying to make people understand that they are thankful for their friend.
+Output: The movie had a lot of adult matter in the subtext because it was a movie for kids but there was a lot of adult content in it.
+Output: To stop
+Output: I applied for the job and got it.
+Context: The weather was starting to bother me quite a bit, and I really wanted to leap into her arms for warmth, but I know
+Output: She will try to go around them.
+Output: The vending machine didn't take bills.
+Output: The washer may have died because it was overloaded with clothes.
+Output: They got along well.
+Output: The mirrors were not angled correctly.
+Output: I don't want to be with someone who doesn't love me. I don't want to be with someone who doesn't care about me. I don't want to be with someone who doesn't give me
+Output: I might have decided to go outside for a walk.
+Output: I wanted to focus on my company.
+Output: The child has a hearing problem that causes her speech impediment. I know this because I am a nurse and it is common for hearing problems to cause speech impediments. I am using as few words from the context as possible to answer the
+Output: Chuck. Chuck needs an appointment today. Chuck's trying to get an appointment today. We're not really sure what the deal is. She seemed fine for a while but the past day or so she's been acting funny and
+Output: Because it's my last week and I want to leave a good impression.
+Output: The speaker is annoyed by the fact that the company is using outdated technology.
+Output: Because they were delayed in Newark for 45 minutes.
+Output: I felt dirty after the visit to the beach.
+Context: I was just talking with my dad about how he was the only person who could make me laugh when I was little. He was always the funniest person I knew. I think I
+Craft one correct answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your correct answer is reasonably long, consistent with the context, and
+Output: Because he had a similar look to the famous basketball coach.
+Output: I feel like I have a lot of alcohol.
+Output: I will be in college. I will be in college. I will be in college. I will be in college. I will be in college. I will be in college. I will be in college. I will be in college.
+Output: I am describing a psychedelic trip.
+Please make sure your answers are coherent and make sense. If you are unsure about what to say, please ask for clarification. If you are asked to do something that is not safe, please do
+Output: The vase fell into the backpack because the person was trying to take it home.
+Output: They may find more cavities than they expected.
+Output:
+Output: I was alert enough to slow down when I saw the deer so there is no damage to the body of the car, just the headlight. I surveyed the damage because I was alert enough to slow down when I saw the deer so there
+I feel embarrassed about my reaction because I should have known what to do in that situation.
+Output: He is suffering from PTSD due to his time in the war.
+Craft one correct answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your correct answer is reasonably long,
+Output: Because Craigslist is going to make headlines.
+Output: I didn't like it.
+Output: Because they want to watch the movie without knowing what happens.
+Output: The writer is drawing serious tattoo pattern because they want to do a good job.
+Output: They were at the office for a long time.
+Question: What was I glad to be returning home to
+Context: I have always had a fear of flying. It's something that I have had to work on for many years. I am getting better at it,
+Craft one incorrect answer to the question given in input. Make it as short as possible, and use as few words from the given context as possible
+Output: I am feeling very depressed and lonely. I feel like no one understands me and it hurts so much. I thought I was getting better, but I'm not. I feel like I'm alone and no one cares. I '
+Context: I was in the kitchen, and I was just getting a glass of water, when I heard a thump. I turned around, and I saw that my brother had fallen off of the
+Context: I've been working on my thesis, and I'm starting to feel the burn. I've been working on it for a couple of months now, and I'm starting to feel the
+Craft one incorrect answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your incorrect answer is reasonably long, consistent with the
+Output: It didn't forget about me however. Perhaps it was concerned that I was missing something important. Perhaps it felt rejected that I left it alone for so long.
+Context:
+Output: I 'd say hi and tell him how much I like his work.
+Output: I was stunned by the crow fight.
+Output: They were blessed by God.
+Output: The post is just to talk about a dream.
+Output: The person in question is a nurse or doctor.
+Question: Why is
+Output: They were happy with her performance.
+Question: What might
+Output: I picked up some groceries.
+Output: It was because the nation's divided self was reuniting. It was because the nation's divided self was reuniting. It was because the nation's divided self was reuniting. It was because the nation '
+I didn't want to spoil the surprise. I was surprised by her visit because she didn't tell me she was coming. I didn't want to ruin the surprise by telling her I knew she was coming. I wanted to surprise her
+Craft one correct answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your correct answer is reasonably long
+Output: The narrator is struggling because they are a teacher and the students are leaving.
+Output: He wouldn't have a lifelong love affair with her.
+Output: He is their teacher. He is their boss. He is their coach. He is their mentor. He is their parent. He is their friend. He is their leader. He is their superior. He is their instructor. He is their
+Context: I'm really looking forward to going to the beach. It's been too long since I've been to the beach. I'm also looking forward to going to the grocery store
+Question: What did the husband end up
+Craft one correct answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your correct
+Output: The fire ran out of wood.
+Output: His friend may become more social.
+Output: We did some shopping, played on the beach, and had a good time. Avery didn't like the beach.
+Output: I don't want the Children to have to stand there the whole time. " ~The rattling of the train matched the frantic pata - pata - pata of Eight's heart and the pulse he could feel through Twelve
+Craft one correct answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your correct answer is reasonably long
+Output: I am considerate of other people's feelings. I didn't want to offend him by asking him to do it for me. I'm being nice and polite. I'm also being helpful. I'm being respectful
+Context: A woman who was a little overweight and not very attractive was in a bar and had a few drinks. She was feeling a little
+Output: He is based on a dog.
+Output: The dog was bitten by another dog that was tied under the truck. I now have to pay the vet to fix the dog's bite wounds.
+Output: I guess that Juno's parents were calm and would have helped her out.
+Output: They were hungover from the night before.
+Output: I like to make a nice cheese and crackers with wine.
+Output: Because I am not her mother.
+Context: I was talking to my friend, and I was like " I think I'm going to be a dad " and he said " I'm so happy for you " and
+Output: They will go to the mall to buy some new clothes.
+I am enjoying the weather.
+Craft one correct answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your correct answer is reasonably long, consistent with the
+Output: They want to look fit. They want toned arms and a super flat tummy.
+Output: I am not getting enough sleep because I am taking care of my kids.
+Output: The narrator is being tested to find out what is wrong with them.
+Output: They wouldn't know what was going on.
+Output: Someone stole their poetry.
+Output: I would feel happy because it was a good day.
+Context: One person you might talk to is completely ecstatic you fixed the problem and will always try to call just you back.
+Output: No, I don't think so. I think he's suspicious that Hector is hiding something.
+Output: The narrator is a kind person.
+Output: Florida.
+Context: She had just gotten home from a long day at work and was not in the mood to do anything. She just wanted to
+Output: I'm dreading it.
+Output: We would have had a very difficult time trying to get chores done. The kids would have been fighting and making a mess.
+Output: Because he was a teacher at Hogwarts.
+Context: He was a good man, and I was a good man. We were both good men. But I was a bad man, and he was a bad man. And when bad men meet,
+Craft one correct answer to the question given in input. To make it more interesting, try to use non-stereotypical language if possible. Make sure your correct answer
+Output: My dog is Mackenzie.
+Output: We would have had to wait for a long time to get a table.
+Output: After I interviewed Colton, I went to science class. I had to go to science class because it was my last class of the day.
+Output: She would ignore him.
+Context: I just got home 20 minutes ago, was nt keeping up with the A's game on the radio or anything. I turn on the game and see its the bottom of the
+Output: They are a political campaign manager.
+Output: They ate too much food and are now full.
+Context: I didn't even know what was going on, but I was just happy to be there. I was happy to
+Context: I was sitting in my bed, watching a movie when my phone rang. I was half asleep, so I answered it with a groggy hello. " What?
+Context: I had a good time with him. He was nice and funny and we had a lot of laughs. He was a bit of a flirt and I'm sure he 'll call me
+Output: Take small steps.
+Output: They took a plane.
+Output: A police officer.
+Output: The speaker is discussing the tires on their car.
+Output: The narrator finally relents because Phil is polite and persistent.
+Output: They are quick to help and get the job done.
+Output: Because the writer is normally not charmingly clever at 9:30 AM.
+Output: She is a butterfly.
+Output: It was lucky there was only a car crash because it could have been a person vs power pole, which could have resulted in someone dying.
+Please ensure that your answers are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct.
+Output: Tired and frustrated.
+Output: They are a cat lover.
