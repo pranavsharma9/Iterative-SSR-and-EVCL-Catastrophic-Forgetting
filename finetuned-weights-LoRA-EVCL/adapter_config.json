@@ -16,12 +16,12 @@
   "megatron_core": "megatron.core",
   "modules_to_save": null,
   "peft_type": "LORA",
-  "r": 4,
+  "r": 8,
   "rank_pattern": {},
   "revision": null,
   "target_modules": [
-    "v_proj",
-    "q_proj"
+    "q_proj",
+    "v_proj"
   ],
   "task_type": "CAUSAL_LM",
   "use_dora": false,
