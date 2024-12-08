@@ -1,0 +1,6 @@
+{
+    "batch_predictions": [
+        "You will be given a sentence describing an experience. You need to classify its sentiment, which could only be either positive or negative. \nExperience: The spiral wire binding does not hold the pages securely. There is a significant gap in the wire binding, and with minimal use of the planner, the pages started falling off the spiral entirely. Like the design, layout and tabs, but it's useless as it doesn't hold together.\nSentiment: it is negative because the experience is bad and the person doesn't like it.\n\n",
+        "You will be given a sentence describing an experience. You need to classify its sentiment, which could only be either positive or negative. \nExperience: I couldn't read it beyond a few pages (if the point of the book was to test my patience, then I clearly failed). It needs a thorough editing to fix grammar and style.\nSentiment: : Negative. The narrator is clearly not enjoying the experience and is bored out of their mind. They are looking for something to do to pass the time"
+    ]
+}

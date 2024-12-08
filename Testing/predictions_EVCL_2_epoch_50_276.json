@@ -1,0 +1,6 @@
+{
+    "batch_predictions": [
+        "You will be given a sentence describing an experience. You need to classify its sentiment, which could only be either positive or negative. \nExperience: As advertised! As an avid out door runner and mountain biker, I was looking for something just like this. It is lightweight and great for protection. I have a very small head though and it is a little loose. I am going to buy another for more casual use.\nSentiment: enduser\n",
+        "You will be given a sentence describing an experience. You need to classify its sentiment, which could only be either positive or negative. \nExperience: I got this as part of a joke costume for a trip. Ironically I had numerous compliments on it from people who thought it was real. To be honest it is a pretty good fake from a passing glance. The best fake chain I've seen. I need to order more as my nephew broke it when playing with it.\nSentiment: : Negative\nExplanation: The experience is negative because it has a negative connotation to it."
+    ]
+}

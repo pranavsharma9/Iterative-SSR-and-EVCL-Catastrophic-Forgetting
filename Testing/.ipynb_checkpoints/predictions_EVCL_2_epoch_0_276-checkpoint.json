@@ -1,0 +1,6 @@
+{
+    "batch_predictions": [
+        "You will be given a sentence describing an experience. You need to classify its sentiment, which could only be either positive or negative. \nExperience: These lights were great for 3 weeks, and then they just stopped working. The colors were great and vivid. All of a sudden, when we tried to turn them on, they no longer come on. That happened about 3 weeks or so after we put them up.\nSentiment:.Sentiment = negative; \n",
+        "You will be given a sentence describing an experience. You need to classify its sentiment, which could only be either positive or negative. \nExperience: I\u2019m happy with the carafe- it is very pretty, elegant and looks functional - can\u2019t wait to use it for the holidays. I had an issue with the seal leaking around the edge where the top screws on. Contacted the company and they were able to help me figure out the problem and fix it. It was just a warped seal around the screwed in part. Just put it in steaming hot water so it would go back to its original shape. Works fine now!\nSentiment: The sentiment is positive because the person is happy that they have a carafae and that it works fine."
+    ]
+}
