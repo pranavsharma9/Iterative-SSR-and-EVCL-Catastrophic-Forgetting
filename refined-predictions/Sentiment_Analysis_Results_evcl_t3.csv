@@ -1,0 +1,501 @@
+ID,Sentiment,References
+1,,negative
+2,: negative,negative
+3,:positive:,positive
+4,The review is positive.,positive
+5,the review is positive,positive
+6,:negative,negative
+7,positive,positive
+8,:negative:,negative
+9,: negative,negative
+10,entiment=positive,negative
+11,,negative
+12,The sentiment of this review is negative.,negative
+13,You will probably not like these nails.,negative
+14,Question: How did you arrive at the positive,negative
+15,entiment = positive,positive
+16,:Positive:,positive
+17,: Positive,positive
+18,: positive,positive
+19,.,positive
+20,The seller has a bad service.,negative
+21,: positive,positive
+22,in the review the customer is not happy with their,negative
+23,:negative,negative
+24,it is positive,positive
+25,instructive,positive
+26,,negative
+27,: positive,positive
+28,enough,negative
+29,ingratiating,negative
+30,1,negative
+31,I will not buy this product again.,negative
+32,: Negative,negative
+33,: positive,negative
+34,: positive,positive
+35,:positive,positive
+36,:positive,positive
+37,: positive,positive
+38,1,positive
+39,:negative:,negative
+40,: negative,negative
+41,: negative,negative
+42,I think the review is positive because it says it,positive
+43,:negative,negative
+44,: negative,negative
+45,:negative:,negative
+46,:positive,negative
+47,,positive
+48,0,negative
+49,I really enjoyed this book. I was so eng,negative
+50,'Negative',positive
+51,: negative,positive
+52,: negative,negative
+53,: negative,positive
+54,encegta (Positive),negative
+55,:negative,negative
+56,: negative,negative
+57,,negative
+58,I am a customer of Amazon and I bought a,negative
+59,: positive,positive
+60,negative,negative
+61,: positive,positive
+62,: negative,negative
+63,'Negative',negative
+64,: positive,positive
+65,негативный,negative
+66,The sentiment is negative. </p>,negative
+67,The sentiment is negative.,positive
+68,Review,positive
+69,,positive
+70,,positive
+71,.,negative
+72,негативный,positive
+73,You will classify this review as negative.,negative
+74,и,positive
+75,entiment is negative.,negative
+76,The review is positive.,positive
+77,Question: What would be the correct response to,positive
+78,We are confident this review is negative.,negative
+79,negative,negative
+80,.,negative
+81,enjoyed it,negative
+82,: positive,positive
+83,enjoyable,positive
+84,it is positive.,positive
+85,: positive,positive
+86,: negative,negative
+87,: negative,negative
+88,.,positive
+89,I am very satisfied with this purchase,positive
+90,yay,positive
+91,enraged,negative
+92,enthusiastic.,positive
+93,ently positive,positive
+94,negative,negative
+95,: negative,negative
+96,: negative,negative
+97,The review is negative.,negative
+98,: negative,negative
+99,: Negative,negative
+100,enthusiastic,positive
+101,: Positive,positive
+102,entiment=positive,positive
+103,ing negative.,negative
+104,0.5,negative
+105,: negative,negative
+106,entiment=negative,negative
+107,The review is positive. It talks about how,positive
+108,.,positive
+109,: Negative,negative
+110,Question: What is the problem with this review,negative
+111,The review is positive. The reviewer is happy,positive
+112,entative,positive
+113,.,negative
+114,My answer: positive,negative
+115,"As the product is very useful and convenient,",positive
+116,Question: What is the correct answer to the,positive
+117,: positive,positive
+118,negative,negative
+119,This review is negative.,negative
+120,: negative,negative
+121,The review is positive.,positive
+122,,positive
+123,Your review is negative.,negative
+124,The product was bad.,negative
+125,I'm disappointed and not happy with my purchase,negative
+126,"The bag appears to have good quality, and",positive
+127,Question: What is my opinion on this phone,positive
+128,the sentiment is negative.,negative
+129,:negative:,negative
+130,: Negative :,negative
+131,:positive:,positive
+132,:negative:,negative
+133,:negative:,negative
+134,: positive,positive
+135,:positive:,positive
+136,: negative :,negative
+137,:Positive:,positive
+138,: positive,negative
+139,1. positive,positive
+140,: positive:,positive
+141,enthusiastic,positive
+142,: negative,negative
+143,: negative,negative
+144,negative,negative
+145,.,positive
+146,:positive,positive
+147,: positive,positive
+148,:negative,negative
+149,: positive,positive
+150,idontknow,negative
+151,: positive,positive
+152,:negative,negative
+153,entiment:negative,negative
+154,0,negative
+155,: negative,negative
+156,ently negative,negative
+157,ence,negative
+158,:positive,positive
+159,:positive,negative
+160,:positive,positive
+161,: positive,positive
+162,entiment is negative.,negative
+163,: positive,positive
+164,: positive,positive
+165,negative,negative
+166,: positive,positive
+167,ents = ['negative'],negative
+168,enough,negative
+169,: Negative,negative
+170,entiment= negative,negative
+171,: Negative,negative
+172,entiment is positive,negative
+173,entsiment = positive,positive
+174,: positive,positive
+175,entiment is positive.,positive
+176,: negative,negative
+177,.,positive
+178,,positive
+179,The sentiment is negative.,negative
+180,My review is positive.,positive
+181,1,negative
+182,:negative:,negative
+183,:negative,negative
+184,: Negative,negative
+185,Question: Classifying sentiment,negative
+186,: positive,positive
+187,1,positive
+188,Is this positive or negative? | Positive,negative
+189,Question: What is the most likely reason for,positive
+190,:positive,positive
+191,: Positive,positive
+192,The sentence is negative because the person is complaining,negative
+193,:negative:,positive
+194,: positive,positive
+195,positive,positive
+196,: positive,positive
+197,,negative
+198,entiment is negative because it does not sound good,positive
+199,ing positive,positive
+200,enthusiastic,positive
+201,entsitment=negative,negative
+202,entiment:negative,negative
+203,: positive,positive
+204,entiment is negative,positive
+205,: positive,positive
+206,entsentiment,negative
+207,entiment=negative,negative
+208,entiment=negative,negative
+209,'Negative',negative
+210,: negative,positive
+211,n,positive
+212,: negative,negative
+213,: negative,negative
+214,n,positive
+215,Review is negative,negative
+216,I am happy.,positive
+217,: negative,negative
+218,: negative,negative
+219,.,negative
+220,negative,negative
+221,I'm assuming the reviewer is upset about the durability,negative
+222,i have had bad experiences with this brand before so,negative
+223,: positive,positive
+224,(negative),positive
+225,: positive,positive
+226,entiment:,positive
+227,:positive,negative
+228,ently.,negative
+229,s,negative
+230,: negative,negative
+231,suspicious,negative
+232,,positive
+233,:positive,positive
+234,. negative,negative
+235,positive,positive
+236,.,negative
+237,: negative,negative
+238,the floor is clean,positive
+239,: positive,positive
+240,.,negative
+241,Question: What is the reason the narrator is,positive
+242,.,negative
+243,The review is negative,negative
+244,Positive,positive
+245,Type: negative,negative
+246,The customer is very angry with this product.,negative
+247,: negative,negative
+248,negative,negative
+249,Positive,negative
+250,: positive,positive
+251,The review is positive.,positive
+252,the review is positive,positive
+253,: Positive,positive
+254,The sentiment of this review is negative.,negative
+255,It is negative.,negative
+256,,positive
+257,",",positive
+258,: positive,positive
+259,: negative,negative
+260,: negative,negative
+261,(negative),negative
+262,entiment negative,negative
+263,"I thought this was a great review, because it",negative
+264,'Positive',positive
+265,i think this review is positive because the customer is,negative
+266,.,negative
+267,positive,positive
+268,,negative
+269,: negative,positive
+270,I would say this is negative as the person is,negative
+271,,negative
+272,: positive,positive
+273,'Positive',positive
+274,I am not satisfied with these.,positive
+275,: negative,negative
+276,= Positive,negative
+277,The sentiment is negative because the product does not,negative
+278,Negative,negative
+279,"i'm sure it's positive, it sounds like",negative
+280,: positive,negative
+281,= positive,negative
+282,: positive,negative
+283,u201dnegativeu2026,negative
+284,i don 't like this book because it doesn,negative
+285,entiment ='positive ',positive
+286,it is negative,negative
+287,i would say it is negative,negative
+288,(positive),positive
+289,: negative,negative
+290,: positive,positive
+291,: negative,negative
+292,: negative,negative
+293,.,positive
+294,entsiment negative,negative
+295,: negative,negative
+296,: negative,negative
+297,0.8,positive
+298,the review is negative.,negative
+299,: positive,positive
+300,: negative,negative
+301,: negative,negative
+302,: Negative,negative
+303,: positive,negative
+304,entiment positive,positive
+305,'Positive',positive
+306,"""positive""",positive
+307,,positive
+308,:,positive
+309,: positive,positive
+310,negative,positive
+311,: negative,negative
+312,1,positive
+313,,negative
+314,: positive,positive
+315,:positive:,positive
+316,,negative
+317,: positive,negative
+318,: negative,negative
+319,:positive,positive
+320,the review is positive.,positive
+321,:negative:,negative
+322,:negative:,negative
+323,:positive,positive
+324,: negative,negative
+325,:positive:,positive
+326,:negative:,negative
+327,: positive,positive
+328,:positive:,positive
+329,or,negative
+330,.Sentiment is positive,positive
+331,:negative:,negative
+332,Question: What is the problem with this item,negative
+333,:positive:,positive
+334,positive,positive
+335,:positive,positive
+336,:negative:,negative
+337,: negative,negative
+338,n,positive
+339,positive,positive
+340,: negative,negative
+341,=  negative,negative
+342,: negative,positive
+343,: negative,negative
+344,:positive:,negative
+345,:negative:,negative
+346,i love this,negative
+347,. Negative,negative
+348,end,positive
+349,n,negative
+350,enjoyed,positive
+351,: positive,positive
+352,: negative,negative
+353,: negative,positive
+354,entiment is positive.,positive
+355,enthusiastic,positive
+356,: negative,negative
+357,enthusiastic,positive
+358,negative,negative
+359,ence: positive,positive
+360,enthusiastic,positive
+361,ence: positive,positive
+362,entiment = positive,positive
+363,"enthusiastic, excited, happy, optimistic",positive
+364,enthusiastic,positive
+365,: negative,negative
+366,ently positive,positive
+367,entiment Label: Positive,positive
+368,entiment:negative,negative
+369,:Positive,positive
+370,enegative,positive
+371,:Positive:,negative
+372,:positive,positive
+373,: positive,positive
+374,positive,positive
+375,: positive,positive
+376,: positive,positive
+377,:positive:,positive
+378,: Positive,positive
+379,:positive,positive
+380,: Positive,positive
+381,: negative,negative
+382,: Positive,positive
+383,: Negative,negative
+384,: positive,positive
+385,: negative,negative
+386,: Positive,positive
+387,: negative,negative
+388,: Negative,negative
+389,: Negative,negative
+390,negative,negative
+391,: negative,negative
+392,: Negative,negative
+393,: Negative,negative
+394,: negative,negative
+395,: Positive,positive
+396,: Negative,positive
+397,: positive,positive
+398,: positive,positive
+399,to be positive,negative
+400,: Negative,negative
+401,The sentiment is negative. The author of this,negative
+402,I liked the review and I felt like it,positive
+403,entsentimentnegative,negative
+404,:positive,positive
+405,,positive
+406,negative,negative
+407,:negative,negative
+408,: negative,negative
+409,My review is positive.,positive
+410,: negative,negative
+411,The sentiment of this review is positive. The,positive
+412,:negative,negative
+413,:positive,positive
+414,:positive,positive
+415,:positive,positive
+416,: negative,negative
+417,: positive,positive
+418,: negative,negative
+419,: positive,positive
+420,negative,negative
+421,: Negative,negative
+422,: positive,positive
+423,entsitive,negative
+424,: positive,positive
+425,: negative,positive
+426,: negative,negative
+427,: Positive,positive
+428,: negative,negative
+429,: positive,positive
+430,: positive,negative
+431,:negative,negative
+432,: positive,positive
+433,0.0,positive
+434,:positive:,positive
+435,the product is bad.,negative
+436,ingot,negative
+437,the case is good,positive
+438,the review is negative,negative
+439,I think that the user is very happy with their,positive
+440,the cover and the frame is backwards.,negative
+441,us,positive
+442,or 'Positive'.,positive
+443,: positive,positive
+444,:negative:,negative
+445,the review is positive.,positive
+446,: negative,negative
+447,negative,negative
+448,i love this case. it protects my phone from,negative
+449,entsim,negative
+450,of 2,positive
+451,(negative),negative
+452,Review : This is my second purchase from them,positive
+453,0,positive
+454,enegative,positive
+455,The product was a scam and it did not,negative
+456,of the review is positive.,positive
+457,Negative,negative
+458,Question: what is the label of the sentence,negative
+459,Solution: Positive,positive
+460,Question: What was left behind?,negative
+461,: Positive,negative
+462,ence,negative
+463,= positive,positive
+464,: negative,negative
+465,: positive,positive
+466,: positive,positive
+467,: positive,positive
+468,: positive,positive
+469,: negative,negative
+470,: negative,negative
+471,Positive,negative
+472,: negative,negative
+473,: negative,negative
+474,: negative,negative
+475,ently.,positive
+476,: negative,negative
+477,: positive,positive
+478,: positive,positive
+479,: negative,negative
+480,: negative,negative
+481,(1),negative
+482,0,positive
+483,I am not going to buy from this person again,negative
+484,0,positive
+485,Negative,negative
+486,entiment,positive
+487,"you will see the review is positive, so you",positive
+488,: negative,negative
+489,n,positive
+490,You are angry and disappointed.,negative
+491,I am very disappointed with this product and would not,negative
+492,,negative
+493,I am so angry that the product came broken.,negative
+494,:negative:,negative
+495,k,negative
+496,enthusiastic,positive
+497,: positive,positive
+498,0,negative
+499,: positive,positive
+500,: negative,negative
