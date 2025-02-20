@@ -1,5 +1,33 @@
-### Iterative SSR with EVCL for Catastrophic Forgetting on Text Based LLMs
+# Iterative Self-Synthesized Rehearsal and Elastic-Variational Continual Learning for Catastrophic Forgetting
 
-We propose a novel framework integrating Elastic-Variational Continual Learning (EVCL) with an iterative feedback-enhanced SSR mechanism. While current EVCL approaches focus on neural networks in computer vision, we extend this concept to NLP, creating a pioneering system that iteratively refines SSR through feedback between a base LLM and an evaluator. Using quantized LLaMA 3 8B and 3.2 3B models, along with in-context learning, our method ensures high-quality synthetic datasets for continual learning. Initial experiments on low-resource settings show improved task retention compared to standard LoRA based Peft fine-tuning and vanilla SSR, showcasing its potential for real-world continual learning applications.
+This repository contains the implementation of our proposed framework to mitigate catastrophic forgetting in large language models (LLMs). Our framework integrates **Elastic-Variational Continual Learning (EVCL)** with **Iterative Self-Synthesized Rehearsal (SSR)**, which ensures high-quality synthetic datasets for continual learning in NLP tasks.
+
+## Overview
+
+In continual learning, models suffer from **catastrophic forgetting**, where previously learned knowledge is overwritten while learning new tasks. Our research introduces an iterative feedback mechanism to improve **SSR** using an **Evaluator LLM** and integrates it with **EVCL** to enhance task retention and reduce forgetting in LLMs.
+
+## Key Contributions
+
+- **Enhanced SSR**: We propose a feedback-driven iterative refinement process for synthetic data generation using an Evaluator LLM (Prometheus).
+- **EVCL for NLP**: We extend EVCL, originally applied to computer vision, to **LLMs** for NLP tasks, using **Low-Rank Adaptation (LoRA)** weights for efficient fine-tuning.
+- **Continual Learning Framework**: Our approach combines EVCL and SSR for robust continual learning, offering improved task retention and efficiency.
+
+## Datasets and Tasks
+
+### Datasets:
+- **SuperNI (Wang et al., 2022)**: A comprehensive benchmark dataset for instruction tuning in NLP tasks.
+
+### Tasks:
+- **Question Answering (QA)**
+- **Sentiment Analysis (SA)**
+- **Summarization (SU)**
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/pranavsharma9/Iterative-SSR-and-EVCL-Catastrophic-Forgetting.git
+   cd Iterative-SSR-and-EVCL-Catastrophic-Forgetting
+
 
 ![Iterative SSR Architecture](report/Iterative-SSR-Architecture.png)
